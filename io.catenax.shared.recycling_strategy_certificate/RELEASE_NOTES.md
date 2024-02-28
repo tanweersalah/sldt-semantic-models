@@ -8,15 +8,15 @@ All notable changes to this model will be documented in this file.
 ### Changed
 - Update based on shared aspect "uuid"
 - Update based on shared aspect "business partner number"
+- Updated VIN characteristic to "localIdentifiers" from aspect "serial_part"
 - Renamed "issuer" to "supplier"
 
 ### Added
 - new features: Revocation Date
 - new features: using manufacturerPartId from aspect "part_type_information"
-- new features: using localIdentifiers from aspect "serial_part"
 
 ### Removed
-- removed features: OE Number ,VIN 
+- removed features: OE Number 
 
 ## [2.0.0] - 2023-11-07
 ### Added

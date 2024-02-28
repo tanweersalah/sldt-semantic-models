@@ -49,7 +49,7 @@
 :RecyclingStrategyCertificateEntity a samm:Entity ;
    samm:preferredName "Recycling Strategy Certificate"@en ;
    samm:description "Encapsulates the recycling strategy certificate  relevant attributes."@en ;
-   samm:properties ( :supplier :issueDate :catenaXIdPreviousLife :catenaXId :articleNumber :revocationDate ext-information:manufacturerPartId ext-part:localIdentifiers ) .
+   samm:properties ( :supplier :issueDate :catenaXIdPreviousLife :catenaXId :articleNumber :revocationDate ext-information:manufacturerPartId :vin ) .
 
 :supplier a samm:Property ;
    samm:preferredName "Supplier"@en ;
@@ -87,8 +87,12 @@
    samm:characteristic :Date ;
    samm:exampleValue "2024-01-01"^^xsd:date .
 
+:vin a samm:Property ;
+   samm:preferredName "VIN"@en ;
+   samm:description "Vehicle Identification Number. Remark: this should be deducted from a reference to the vehicle TWIN"@en ;
+   samm:characteristic ext-part:LocalIdentifierCharacteristic .
+
 :Date a samm:Characteristic ;
    samm:preferredName "Date"@en ;
    samm:description "Describes a Property which contains the date."@en ;
    samm:dataType xsd:date .
-
